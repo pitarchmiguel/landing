@@ -2,7 +2,7 @@ import './index.css'
 import Profile from './components/Profile'
 import Card from './components/Card'
 
-function App() {
+export default function App() {
   const born = "Castellón de la Plana, Spain";
   const description = "Frontend Developer";
 
@@ -39,5 +39,3 @@ function App() {
     </>
   )
 }
-
-export default App
