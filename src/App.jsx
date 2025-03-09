@@ -18,7 +18,7 @@ export default function App() {
           <p className="flex gap-3"><span>💻</span>{description}</p>
           <h2 className="font-semibold mt-10 text-2xl">Transformando ideas en experiencias alucinantes.</h2>
           <h3 className="font-semibold mt-10 text-1xl">¿Hablamos?</h3>
-          <p>hola@miguelpitarch.com</p>
+          <p>hola@miguelpitarch.comm</p>
         </aside>
 
 
