@@ -21,8 +21,8 @@ export default function App() {
 
   return (
     <>
-      <div className="flex flex-wrap md:p-20 p-5 justify-center md:text-left min-h-screen gap-10">
-        <aside className="md:basis-1/3">
+      <div className="md:flex flex-wrap md:p-20 p-5 justify-center md:text-left min-h-screen gap-10">
+        <aside className="md:basis-1/4">
           <div className="flex md:flex-col gap-5 items-center md:items-baseline">
           <div className="size-25 md:size-40 rounded-full flex items-center justify-center">
             <Profile />
@@ -38,8 +38,8 @@ export default function App() {
             <p>hola@miguelpitarch.com</p>
         </aside>
 
-        <section className="flex-1 h-screen overflow-y-auto">
-          <div className="flex flex-wrap gap-5">
+        <section className="flex-1 h-screen overflow-y-auto mt-5">
+          <div className="flex flex-wrap gap-8">
           <Card 
             title="FireStation"
             description="Carta digital para una cafeteria healthy"
