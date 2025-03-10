@@ -2,6 +2,6 @@ const user = "https://media.licdn.com/dms/image/v2/C4E03AQEsvRCzDNOi9g/profile-d
 
 export default function Profile() {
     return (
-        <img src={user} alt="Miguel Pitarch" className="size-40 bg-amber-400 rounded-full flex items-center justify-center" />
+        <img src={user} alt="Miguel Pitarch" className=" bg-amber-400 rounded-full flex items-center justify-center" />
     )
 }
