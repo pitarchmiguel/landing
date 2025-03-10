@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <>
-      <div className="flex flex-wrap md:p-20 p-3 justify-center md:text-left min-h-screen gap-10">
+      <div className="flex flex-wrap md:p-20 p-5 justify-center md:text-left min-h-screen gap-10">
         <aside className="md:basis-1/3">
           <div className="flex md:flex-col gap-5 items-center md:items-baseline">
           <div className="size-25 md:size-40 rounded-full flex items-center justify-center">
