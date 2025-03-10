@@ -1,10 +1,23 @@
+import React, { useState, useEffect } from 'react';
 import './index.css'
 import Profile from './components/Profile'
 import Card from './components/Card'
 
 export default function App() {
   const born = "Castellón de la Plana, Spain";
+  const bornMobile = "Castellón, Spain";
   const description = "Frontend Developer";
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
@@ -16,7 +29,7 @@ export default function App() {
           </div>
           <div>
             <h1 className="md:text-4xl text-2xl font-bold md:mt-10">Miguel Pitarch</h1>
-            <p className="mt-3 flex gap-3"><span>🇪🇸</span>{born}</p>
+            <p className="mt-3 flex gap-3"><span>🇪🇸</span>{isMobile ? bornMobile : born}</p>
             <p className="flex gap-3"><span>💻</span>{description}</p>
           </div>
           </div>
@@ -24,7 +37,6 @@ export default function App() {
             <h3 className="font-semibold md:mt-10 mt-5 text-1xl">¿Hablamos?</h3>
             <p>hola@miguelpitarch.com</p>
         </aside>
-
 
         <section className="flex-1 h-screen overflow-y-auto">
           <div className="flex flex-wrap gap-5">
